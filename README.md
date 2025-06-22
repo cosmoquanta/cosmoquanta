@@ -15,3 +15,5 @@ A key prediction: Chiral asymmetry in electron-positron magnetic moments due to 
 The model resolves black hole singularities by imposing an upper limit on SEQ tension and offers analytic foundations for quantum thermodynamics at Planck scales. Gravitational time dilation is explained as reduced SEQ transition frequencies near massive objects.
 
 Invitation for Collaboration： This framework invites interdisciplinary scrutiny and experimental validation. The full paper details derivations, phenomenological consistency checks, and implications for unifying quantum mechanics with gravity.
+
+https://doi.org/10.5281/zenodo.14788393
