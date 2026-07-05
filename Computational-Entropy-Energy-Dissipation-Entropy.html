@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===================== SEO META TAGS (EDIT THESE VALUES) ===================== -->
+    <meta name="description" content="Computational Entropy Encodes Each Step of Energy Dissipation">
+    <meta name="keywords" content="Computational Entropy;Energy Dissipation Entropy">
+    <!-- ============================================================================ -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computational Entropy Encodes Each Step of Energy Dissipation</title>
+    <style>
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Parchment-style background (darker yellow) */
+        body {
+            font-family: "Microsoft YaHei", "SimSun", serif;
+            background-color: #e8e4c9; /* Darker parchment yellow */
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Logo section */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 10px 0;
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        /* Main content area */
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent content box */
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Article title */
+        .article-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #222;
+            font-weight: bold;
+        }
+        
+        /* Chapter headings */
+        .chapter-title {
+            font-size: 20px;
+            margin: 25px 0 15px;
+            color: #444;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        /* Main content styling */
+        .article-content {
+            font-size: 16px;
+            text-align: justify;
+        }
+        
+        .article-content p {
+            margin-bottom: 15px;
+            text-indent: 2em; /* Chinese-style paragraph indentation */
+        }
+        
+        /* Table of contents placeholder */
+        .toc-placeholder {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+            
+            color: #666;
+        }
+        
+        /* Footer contact area */
+        .contact-footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 20px;
+            }
+            
+            .article-title {
+                font-size: 20px;
+            }
+            
+            .chapter-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Site logo area -->
+    <style>
+    .logo {
+        position: absolute;
+        top: 10px;      /*  */
+        left: 10px;    /*  */
+    }
+</style>
+    <div class="logo-container">
+        <img src="logo.png" alt="Site Logo" class="logo">
+    </div>
+<a href="https://cosmoquanta.com" target="_blank">
+  <img src="logo.png" alt="Site Logo" class="logo">
+</a>
+    
+    <!-- Main content container -->
+    <div class="content-wrapper">
+        <h1 class="article-title">Computational Entropy|Energy Dissipation Entropy</h1>
+        
+        <div class="article-content">
+            <h2 class="chapter-title">Computational Entropy Encodes Each Step of Energy Dissipation</h2>
+<p>1. The Gap Between Statistics and Process</p>
+<p>The concept of entropy has served physics well for over a century. In its standard formulation—S = k_B ln Ω—entropy is a measure of how many microscopic arrangements are consistent with a given macroscopic observation. This is a powerful idea, but it is also a statistical one. It works with ensembles, probabilities, and averages. It tells you how many possibilities exist, but it does not tell you which possibility actually happened.
+
+This is not a minor limitation. Consider a gas that has just expanded into a larger volume. Statistical entropy tells you that the number of available microstates has increased, and therefore entropy has increased. But it does not tell you the sequence of molecular collisions that led to that expansion. It does not distinguish between a gas that expanded slowly and one that expanded rapidly, as long as the final pressures and temperatures are the same. In other words, traditional entropy is a statement about the present state, not about the history that produced it.
+
+This disconnect has led to persistent conceptual puzzles. Why does entropy always increase if the underlying laws of mechanics are time-reversible? Why is the past low-entropy and the future high-entropy if the equations of motion do not care about direction? The standard answer invokes the so-called "past hypothesis"—the assumption that the universe began in a special low-entropy state. But this merely shifts the mystery elsewhere. It does not explain how entropy increase actually happens, moment by moment.
+
+The deeper issue is that statistical entropy is inherently coarse-grained. It requires averaging over microstates, which erases information about the dynamical trajectory. It is a measure of ignorance, not a measure of process. For any system that we wish to simulate computationally—where every discrete step matters—this kind of entropy is inadequate. It gives us a final number, but it does not give us a timeline.</p>           
+<p>2. Entropy as a Product of Local Energies</p>
+<p>The Energy-Gradient Graph Automaton (EGG) model proposes a fundamentally different definition of entropy—one that is not statistical, not probabilistic, and not averaged. It is defined directly on the microscopic state of a discrete network and is updated at every single step of evolution. This is computational entropy: entropy that can be computed, tracked, and recorded as the system evolves.
+
+Consider a network of N nodes, each carrying a positive integer amount of energy m_i, measured in units of Planck's constant h. The total energy of the network is conserved:
+
+Σ_i m_i = E (constant)
+
+The network is topologically fixed: the adjacency relations between nodes never change. Energy can only flow from a node to an adjacent node that has lower energy, and it does so in discrete quanta of h. This is a local gradient rule: energy moves downhill.
+
+The entropy of the entire system is defined as the multiplicative product of all node energies:
+
+S = ∏_i m_i
+
+This is a single integer, computed directly from the current energy distribution. It has no logarithmic approximation, no ensemble averaging, and no probabilistic assumptions. It is a deterministic function of the system's exact state.</p>
+<p>3. How Computational Entropy Captures Dissipation</p>
+<p>The multiplicative entropy has a clear physical interpretation: it measures the degree of uniformity in the energy distribution. When energy is concentrated in a few nodes, the product is small. When energy is spread more evenly, the product is larger. The maximum possible value occurs when all nodes have equal energy, at which point no further transfers are possible and the system is in thermal equilibrium.
+
+But the most important feature of this entropy is not its value at equilibrium—it is how it changes along the way. Every single energy transfer from a higher-energy node to a lower-energy neighbor increases the product S by a calculable amount. The entropy does not merely increase on average; it increases with every discrete event.
+
+This means that the sequence of entropy values forms a complete record of the system's dissipation history. Each step corresponds to one quantum of energy moving down a gradient. Each step has a unique entropy value (or at least a well-defined one), and these values are strictly increasing. The entropy is not just a number; it is a counter that marks the irreversible progression of the system toward equilibrium.
+
+In this framework, energy dissipation is not a vague concept. It is a countable sequence of elementary events—the transfer of energy quanta—and computational entropy is the running total of how uniform the energy distribution has become. You can literally watch the second law unfold, step by step.</p>           
+<p>4. The Mathematical Guarantee of Increase</p>
+<p>Unlike statistical entropy, which increases only probabilistically, the computational entropy of the EGG model increases with mathematical certainty. This is not a tendency; it is a theorem.
+
+Take two adjacent nodes i and j, with energies a and b respectively, where a > b + 1. This is the condition that allows a quantum of energy to transfer from i to j. Before the transfer, the product contribution of these two nodes is a × b. After the transfer, their energies become a − 1 and b + 1, and the new contribution is (a − 1)(b + 1).
+
+The ratio of the new entropy to the old entropy is:
+
+S_new / S_old = [(a − 1)(b + 1)] / (ab)
+
+Expanding the numerator gives:
+
+= (ab + a − b − 1) / (ab) = 1 + (a − b − 1) / (ab)
+
+Since the transfer condition guarantees a − b − 1 > 0, and since a and b are positive integers, the fraction on the right is strictly positive. Therefore:
+
+S_new / S_old > 1
+
+which implies:
+
+S_new > S_old
+
+Every single allowed transfer increases the total entropy. There is no exception. The system cannot spontaneously reverse this trend, because that would require energy to flow uphill—which is forbidden by the local gradient rule. Thus, the second law of thermodynamics is not an emergent approximation; it is a direct, unavoidable consequence of the dynamics.</p>
+<p>5. A High-Resolution Clock for Time</p>
+<p>Because entropy increases with every energy transfer, it serves as a natural clock for the system. Each transfer corresponds to a tick of this clock, and each tick records a permanent change in the energy distribution. The number of ticks that have occurred since the system began is a measure of how much dissipation has taken place.
+
+This is fundamentally different from external time parameters. In traditional physics, time is an independent coordinate, and entropy is a function of that coordinate. In the EGG model, the relationship is reversed: entropy itself defines the progression of events. The sequence of entropy values is the time axis. The arrow of time is not an external assumption; it is encoded in the monotonic increase of S.
+
+This also provides a concrete mechanism for local time dilation. If a region of space is compressed or stretched due to gravity or motion, the resonant frequencies of the nodes in that region are modulated. This changes the rate at which energy transfers occur. Consequently, the local entropy clock runs at a different speed compared to a distant reference frame. This is time dilation, not as a geometric abstraction, but as a countable difference in the number of energy transfers per external tick.
+
+</p>           
+<p>6. Why Traditional Entropy Cannot Do This</p>
+<p>Why has statistical entropy failed to provide this level of resolution? Because it is designed for equilibrium, not for process. Statistical entropy is a property of a macrostate, not a trajectory. It is computed by counting microstates, not by tracking their evolution. It can tell you that two states have different entropies, but it cannot tell you how one state evolved into the other.
+
+Moreover, statistical entropy is often defined only up to an additive constant, and it requires coarse-graining to be well-defined. Coarse-graining erases microscopic details—exactly the details that are needed to understand the step-by-step dynamics of dissipation. It is useful for thermodynamics, but it is inadequate for computational simulation, where every discrete event matters.
+
+Computational entropy, by contrast, is exact. It is defined for every microstate, not just for macrostates. It changes with every event, not just with changes in the macroscopic parameters. It is computable, deterministic, and fully reversible in the sense that you can derive the sequence of energy values from the dynamics. The only thing that is not reversible is the direction of the sequence—and that direction is guaranteed by the gradient rule.</p>
+<p>7. Implications for Simulation and Understanding</p>
+<p>The computational entropy of the EGG model opens the door to a new kind of simulation. Instead of approximating entropy as a statistical average, a computer can track it exactly, event by event. This allows for high-resolution studies of irreversible processes, from simple thermalization to complex cosmological evolution.
+
+More fundamentally, it offers a fresh perspective on the nature of time. In this framework, time is not a background parameter; it is the cumulative record of energy dissipation. The past is the set of entropy values that have already been recorded. The future is the set of values that will be recorded as energy continues to flow downhill. The present is the current entropy value, which determines the set of possible next transfers.
+
+The apparent randomness of quantum processes is also reinterpreted. Because the maximum-entropy path is not always unique, the system may have multiple valid next steps. The Schrödinger equation, in this view, describes not an indeterminate superposition but a distribution over possible trajectories—each of which increases entropy, but not necessarily along the same sequence. The probability amplitude reflects the multiplicity of paths that satisfy the constraints of energy conservation, gradient driving, and entropy maximization.
+
+Thus, computational entropy does more than replace an old formula with a new one. It changes the way we understand the relationship between energy, time, and information. Entropy becomes not a measure of ignorance, but a measure of progress—the cumulative count of every quantum jump the universe has taken toward equilibrium.</p>
+<p>Latest Preprint: Zou, Z. K. (2026). Energy-Gradient Graph Automaton Model (EGG). Cambridge Open Engage.
+https://doi.org/10.33774/coe-2026-75728</p>
+<p>Previous Preprint since 2025: https://doi.org/10.5281/zenodo.14788393</p>
+<p></p>
+<p></p>
+        </div>
+        
+        <!-- Placeholder for table of contents -->
+        <div class="toc-placeholder">
+           <li><a href="index.html">Home Page</a></li>
+<li><a href="Introduction-of-Quantum-Elastic-Spacetime-Model.html">Introduction</a></li>
+<li><a href="Quantized-elastic-duality-basic-sets-of-the-model.html">1.Basic sets of the model</a></li>
+<li><a href="time-space-transformation-Mapping.html">2.Time-space transformations Mapping</a></li>
+<li><a href="Time-entropy-Mapping-Computable-Multiplicative-Entropy.html">3.Time-Entropy Mapping</a></li>
+<li><a href="Analysis-of-Action-universe-evolution-path.html">4.Analysis of Action</a></li>
+<li><a href="Local-time-the-proper-time-relative-time-in-Relativity.html">5.Local time , the proper time and relative time</a></li>
+<li><a href="Basic-physical-quantities-in-Quantized-Elastic-Spacetime-Model.html">6.Basic physical quantities in this model</a></li>
+<li><a href="Phenomenological-consistency-checks-of-Quantized-Elastic-Spacetime-Model.html">7.Phenomenological consistency checks</a></li>
+<li><a href="difference-in-the-magnetic-moments-of-the-positron-and-electron.html">8. A prediction of a difference in the magnetic moments of the positron and electron</a></li>
+<li><a href="Gravitational-Interaction-and-General-Relativity.html">9. Gravitational Interaction and General Relativity</a></li>
+<li><a href="Mass-Gravity-SU(3)-Higgs-field-in-Quantum-Field-Theory-Ⅰ.html">10.1 SU(3) as the Origin of Mass Derivation</a></li>
+<li><a href="Mass-Gravity-SU(3)-Higgs-field-in-Quantum-Field-Theory-Ⅱ.html">10.2-10.5 Mass, Gravity, SU(3) and Higgs field in Quantum Field Theory</a></li>
+<li><a href="essence-of-mass-as-the-storage-of-space-elastic-potential-energy.html">10.6 The essence of mass</a></li>
+<li><a href="the-Role-of-the-Higgs-Field-as-quantum-chiral-lock-in-mass-gravity-generation.html">10.7 The role of the Higgs Field: Symmetry Breaking and "Locking" Mechanism</a></li>
+<li><a href="In-gauge-gravity-duality-Why-is-QCD-strength-vastly-stronger-than-gravity.html">10.8. Qcd-Gravity duality | quantum gravity mechanism</a></li>
+<li><a href="Kinetic-Energy-of-Nuclear-reaction-as-Release-of-Space-Elastic-Energy.html">10.9 Kinetic Energy from Nuclear reaction as Release of Mass-Space Elastic Energy Storage</a></li>
+<li><a href="3D-Spatial-Arrangement-Matrix-of-Microscopic-Particles.html">11. Thoughts on the 3D Spatial Arrangement Matrix of Microscopic Particles</a></li>
+<li><a href="Quantum-Gravity-and-Space-Elastic-Response-Frequency.html">12.Space Elastic Response Frequency</a></li>
+<li><a href="Time-dilation-in-relativity.html">Time dilation in Relativity</a></li>
+<li><a href="Physical-simulation-application-of-this-quantized-elastic-space-model.html">Physical simulation application of this quantized elastic space model</a></li>
+<li><a href="Multiplicative-Entropy-Analytic-Quantum-Thermodynamics.html">Multiplicative Entropy | Analytic Quantum Thermodynamics</a></li>
+<li><a href="Cosmic-Expansion-Mechanism--Analysis-of-Future-Trends-in-Cosmic-Expansion.html">Cosmic Expansion Mechanism | Analysis of Future Trends in Cosmic Expansion</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.14788393">Full-text available on Zenodo</a></li>
+        </div>
+    </div>
+    
+    <!-- Footer contact information -->
+    <div class="contact-footer">
+        <p>Author: Zou, Zhi Kai    Contact: zhiyan.zou@foxmail.com | </p>
+        <a href="https://zenodo.org/communities/elementaryquanta/records" style="color: #555555; text-decoration: none;">Author's Collection</a>
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <img alt="CC BY 4.0" src="https://i.creativecommons.org/l/by/4.0/80x15.png">
+  </a>
+    </div>
+<style>
+    
+</ul>
+</div>
+       
+</body>
+</html>
